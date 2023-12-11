@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class Card {
+public class CardRecomendationAnime {
     JPanel cardPanel;
     private static final int CARD_WIDTH = 300;
     private static final int CARD_HEIGHT = 400;
@@ -23,7 +23,7 @@ public class Card {
         JScrollPane scrollPane = new JScrollPane(cardPanel);
         scrollPane.setPreferredSize(new Dimension(1920, 400));
         scrollPane.setOpaque(true);
-        scrollPane.getViewport().getView().setBackground(Color.decode("#ffffff"));
+        scrollPane.getViewport().getView().setBackground(Color.decode("#333b48"));
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
         scrollPane.getVerticalScrollBar().setBackground(Color.decode("#333b48"));
 //        scrollPane.setBackground(Color.BLACK);
@@ -33,7 +33,7 @@ public class Card {
 //        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 //        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
-        JLabel topAnime = new JLabel("Top Anime");
+        JLabel topAnime = new JLabel("Rekomendasi Anime");
         topAnime.setOpaque(true);
         topAnime.setBackground(Color.decode("#333b48"));
         topAnime.setForeground(Color.WHITE);

@@ -6,7 +6,7 @@ import net.oprekoprek.javaswing.component.Card;
 import javax.swing.*;
 import java.awt.*;
 
-public class Main {
+public class SearchAnime {
     static Navbar navbar = new Navbar();
 
     public static void main(String[] args) {
@@ -19,25 +19,28 @@ public class Main {
         frame.setResizable(false);
 
 //        CardAgain card = new CardAgain();
-        CardTopAnime card = new CardTopAnime();
-        CardRecomendationAnime recomendation = new CardRecomendationAnime();
+//        CardTopAnime card = new CardTopAnime();
+//        CardRecomendationAnime recomendation = new CardRecomendationAnime();
 
-        GridBagConstraints gbc = new GridBagConstraints();
+//        GridBagConstraints gbc = new GridBagConstraints();
+//
+//        JPanel scrollingAnime = new JPanel();
+//        scrollingAnime.setSize(1920, 1000);
+//        scrollingAnime.setLayout(new GridBagLayout());
+//
+//        gbc.gridy = 0;
+//
+//        scrollingAnime.add(card.getCard(), gbc);
+//
+//        gbc.gridy = 1;
+//        scrollingAnime.add(recomendation.getCard(), gbc);
 
-        JPanel scrollingAnime = new JPanel();
-        scrollingAnime.setSize(1920, 1000);
-        scrollingAnime.setLayout(new GridBagLayout());
-
-        gbc.gridy = 0;
-
-        scrollingAnime.add(card.getCard(), gbc);
-
-        gbc.gridy = 1;
-        scrollingAnime.add(recomendation.getCard(), gbc);
-
+        CardSearchAnime searchAnime = new CardSearchAnime();
 
         frame.add(navbar.getNavbar());
-        frame.add(scrollingAnime);
+        navbar.setCardSearchAnime(searchAnime);
+        frame.add(searchAnime.getCard());
+
 //        frame.add(recomendation.getCard());
 //        frame.add(Box.createHorizontalStrut(0));
 //        frame.add(card.getCard());
@@ -53,24 +56,21 @@ public class Main {
 //        card.addCard();
 //        card.addCard();
 //        card.addCard();
-        card.addCard();
-        for (int i = 0; i < 10; i++) {
-            card.addCard();
-        }
-
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-        recomendation.addCard();
-
+//        card.addCard();
+//
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//        recomendation.addCard();
+//
 
 
 

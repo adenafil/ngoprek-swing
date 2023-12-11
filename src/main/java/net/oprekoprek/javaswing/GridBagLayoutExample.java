@@ -13,7 +13,7 @@ public class GridBagLayoutExample extends JFrame {
 
         GridBagConstraints gbc = new GridBagConstraints();
 
-        gbc.gridx = 0;
+        gbc.gridx = 100;
         gbc.gridy = 0;
         add(new JButton("Button 1"), gbc);
 

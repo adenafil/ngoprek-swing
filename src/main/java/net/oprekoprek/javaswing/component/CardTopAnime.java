@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class Card {
+public class CardTopAnime {
     JPanel cardPanel;
     private static final int CARD_WIDTH = 300;
     private static final int CARD_HEIGHT = 400;
@@ -23,7 +23,7 @@ public class Card {
         JScrollPane scrollPane = new JScrollPane(cardPanel);
         scrollPane.setPreferredSize(new Dimension(1920, 400));
         scrollPane.setOpaque(true);
-        scrollPane.getViewport().getView().setBackground(Color.decode("#ffffff"));
+        scrollPane.getViewport().getView().setBackground(Color.decode("#333b48"));
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
         scrollPane.getVerticalScrollBar().setBackground(Color.decode("#333b48"));
 //        scrollPane.setBackground(Color.BLACK);

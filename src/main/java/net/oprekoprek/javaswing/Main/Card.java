@@ -21,7 +21,9 @@ public class Card extends JFrame {
 
     }
 
+
     public void updateAnimeCollection(String name) {
+        System.out.println(normalY);
         addCard(cardPanel, x[index],  normalY);
         index++;
         if (index > 4) {
@@ -30,77 +32,83 @@ public class Card extends JFrame {
         }
     }
 
-//    public JScrollPane myAnimeCollection() {
-//        cardPanel = new JPanel();
-//        cardPanel.setLayout(new GridBagLayout());
-//
-//        JScrollPane scrollPane = new JScrollPane(cardPanel);
-//        scrollPane.setPreferredSize(new Dimension(1000, 1000));
-//        scrollPane.setOpaque(true);
-//        scrollPane.setBackground(Color.decode("#333b48"));
-//        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-//        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-//
-//        return scrollPane;
-//    }
-
-    public Card() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(1920, 1080);
-        setResizable(false);
-        setBackground(Color.black);
-
-//        JPanel cardPanel = new JPanel();
-//        cardPanel.setLayout(new GridBagLayout());
-
-//        addCard(cardPanel, 20, 20);
-//        addCard(cardPanel, 350, 20);
-//        addCard(cardPanel, 700, 20);
-//        addCard(cardPanel, 1050, 20);
-//        addCard(cardPanel, 1400, 20);
-//
-//        addCard(cardPanel, 20, 300);
-//        addCard(cardPanel, 350, 300);
-//        addCard(cardPanel, 700, 300);
-//        addCard(cardPanel, 1050, 300);
-//        addCard(cardPanel, 1400, 300);
-//
-//        addCard(cardPanel, 20, 600);
-//        addCard(cardPanel, 350, 600);
-//        addCard(cardPanel, 700, 600);
-//        addCard(cardPanel, 1050, 600);
-//        addCard(cardPanel, 1400, 600);
-//
-//        addCard(cardPanel, 20, 900);
-//        addCard(cardPanel, 350, 900);
-//        addCard(cardPanel, 700, 900);
-//        addCard(cardPanel, 1050, 900);
-//        addCard(cardPanel, 1400, 900);
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
-        updateAnimeCollection("ade");
+    public JScrollPane getMyAnimeCollection() {
+        JPanel cardPanel = new JPanel();
+        cardPanel.setLayout(new GridBagLayout());
 
 
 
 
 
         JScrollPane scrollPane = new JScrollPane(cardPanel);
-        scrollPane.setPreferredSize(new Dimension(1000, 100));
+//        scrollPane.setPreferredSize(new Dimension(1920, 1000));
+//        scrollPane.setBounds(0, 30, 1000, 1000);
+        scrollPane.setOpaque(true);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+//        scrollPane.getViewport().getView().setBackground(Color.decode("#333b48"));
+
+        return scrollPane;
+    }
+
+    public Card() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(1920, 1080);
+        setResizable(false);
+        setBackground(Color.black);
+        setLayout(new FlowLayout());
+
+        JPanel cardPanel = new JPanel();
+        cardPanel.setLayout(new GridBagLayout());
+
+        addCard(cardPanel, 20, 20);
+        addCard(cardPanel, 350, 20);
+        addCard(cardPanel, 700, 20);
+        addCard(cardPanel, 1050, 20);
+        addCard(cardPanel, 1400, 20);
+
+        addCard(cardPanel, 20, 300);
+        addCard(cardPanel, 350, 300);
+        addCard(cardPanel, 700, 300);
+        addCard(cardPanel, 1050, 300);
+        addCard(cardPanel, 1400, 300);
+
+        addCard(cardPanel, 20, 600);
+        addCard(cardPanel, 350, 600);
+        addCard(cardPanel, 700, 600);
+        addCard(cardPanel, 1050, 600);
+        addCard(cardPanel, 1400, 600);
+//
+//        addCard(cardPanel, 20, 900);
+//        addCard(cardPanel, 350, 900);
+//        addCard(cardPanel, 700, 900);
+//        addCard(cardPanel, 1050, 900);
+//        addCard(cardPanel, 1400, 900);
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+//        updateAnimeCollection("ade");
+
+
+
+
+
+        JScrollPane scrollPane = new JScrollPane(cardPanel);
+        scrollPane.setPreferredSize(new Dimension(1920, 1000));
         scrollPane.setOpaque(true);
         scrollPane.getViewport().getView().setBackground(Color.decode("#333b48"));
 //        scrollPane.setBackground(Color.BLACK);
@@ -110,13 +118,20 @@ public class Card extends JFrame {
 //        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 //        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
-        add(scrollPane);
+        JPanel panel = new JPanel();
+        panel.setPreferredSize(new Dimension(1920, 1000));
+        panel.setBackground(Color.YELLOW);
+//        panel.setLayout(null);
+//        panel.setBounds(20, 20, 1000, 1000);
+        panel.add(scrollPane);
+
+        add(panel);
 
         setVisible(true);
     }
 
 
-    private void addCard(JPanel panel, int x, int y) {
+    public void addCard(JPanel panel, int x, int y) {
         JPanel card = new JPanel();
         card.setPreferredSize(new Dimension(CARD_WIDTH, CARD_HEIGHT));
         card.setBackground(Color.ORANGE);
@@ -141,6 +156,33 @@ public class Card extends JFrame {
         gbc.insets = new Insets(10, 10, 10, 10);
         panel.add(card, gbc);
     }
+
+//    public static void addCard(int x, int y) {
+//        JPanel card = new JPanel();
+//        card.setPreferredSize(new Dimension(CARD_WIDTH, CARD_HEIGHT));
+//        card.setBackground(Color.ORANGE);
+//
+//        JLabel img = new JLabel();
+//        img.setOpaque(true);
+//        img.setPreferredSize(new Dimension(CARD_WIDTH, CARD_HEIGHT - 100));
+//        img.setBackground(Color.gray);
+//
+//        JLabel title = new JLabel("<html><p>Sousou No Frieren</p></html>");
+//        title.setPreferredSize(new Dimension(CARD_WIDTH, 60));
+//        title.setBackground(Color.ORANGE);
+//        title.setHorizontalAlignment(SwingConstants.CENTER);
+//        title.setFont(new Font(Font.SERIF, Font.PLAIN, 22));
+//
+//        card.add(img);
+//        card.add(title);
+//
+//        GridBagConstraints gbc = new GridBagConstraints();
+//        gbc.gridx = x;
+//        gbc.gridy = y;
+//        gbc.insets = new Insets(10, 10, 10, 10);
+//        cardPanel.add(card, gbc);
+//    }
+//
 
     public static void addCardStatic(JPanel panel, int x, int y) {
         JPanel card = new JPanel();
